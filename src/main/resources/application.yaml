@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: local
+  liquibase:
+    change-log: classpath:db/changelog/changelog-master.xml
+    default-schema: ${SCHEMA_NAME:public}
+
+bot:
+  token: ${BOT_TOKEN}
+  name: ${BOT_NAME}
